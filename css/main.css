@@ -3,7 +3,6 @@
   margin: 0;
   vertical-align: top;
   font-family: oswald;
-  
 }
 
 /* ===============NAVBAR========== */
@@ -115,33 +114,29 @@ figcaption p {
   width: 60%; /* Ajustez la largeur selon vos besoins */
   height: 60%; /* Ajustez la hauteur selon vos besoins */
 
-
   .coindroit {
-   
     grid-column: 2 / 3;
-    grid-row: 1 / 2; 
+    grid-row: 1 / 2;
   }
-  
 
   .coingauche {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
 
+  .coindroit_background {
+    /* Ajoutez des styles spécifiques au background de coindroit si nécessaire */
+  }
 
-/* Ajustez les styles spécifiques pour chaque image si nécessaire */
-.coindroit_background {
-  /* Ajoutez des styles spécifiques au background de coindroit si nécessaire */
-}
+  .coindroit_overlay {
+    /* Ajoutez des styles spécifiques à l'overlay de coindroit si nécessaire */
+  }
 
-.coindroit_overlay {
-  /* Ajoutez des styles spécifiques à l'overlay de coindroit si nécessaire */
-}
+  .coingauche_background {
+    /* Ajoutez des styles spécifiques au background de coingauche si nécessaire */
+  }
 
-.coingauche_background {
-  /* Ajoutez des styles spécifiques au background de coingauche si nécessaire */
-}
-
-.coingauche_overlay {
-  /* Ajoutez des styles spécifiques à l'overlay de coingauche si nécessaire */
+  .coingauche_overlay {
+    /* Ajoutez des styles spécifiques à l'overlay de coingauche si nécessaire */
+  }
 }
