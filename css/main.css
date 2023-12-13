@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  font-family: oswald;
+  
+}
+
+/* ===============NAVBAR========== */
+
+nav {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.835);
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(235, 235, 235);
+}
+
+a:hover,
+a:active {
+  color: #ffffff;
+}
+
+/* ==================HOME================ */
+
+.landing {
+  position: relative;
+  display: inline-block;
+}
+
+.background_landing {
+  width: 100%;
+  height: auto;
+}
+
+.overlay_landing {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: auto;
+  z-index: 1;
+}
+
+figcaption {
+  background-color: #cfa861;
+  padding: 20px;
+}
+
+figcaption p {
+  margin: 0;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  text-align: justify;
+  margin: 20px;
+}
+
+/* ===================TRADITION================== */
+
+#TRADITION {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  height: 800px; /* Ajustez la hauteur selon vos besoins */
+}
+
+.coindroit,
+.coingauche {
+  position: relative;
+  width: 100%; /* Assurez-vous que les figures occupent toute la largeur du conteneur parent */
+}
+
+.coindroit_background,
+.coingauche_background,
+.coindroit_overlay,
+.coingauche_overlay {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coindroit_overlay,
+.coingauche_overlay {
+  position: absolute;
+  top: 20%; /* Ajustez la position verticale selon vos besoins */
+  left: 20%; /* Ajustez la position horizontale selon vos besoins */
+  width: 60%; /* Ajustez la largeur selon vos besoins */
+  height: 60%; /* Ajustez la hauteur selon vos besoins */
+
+
+  .coindroit {
+   
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; 
+  }
+  
+
+  .coingauche {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+
+/* Ajustez les styles spécifiques pour chaque image si nécessaire */
+.coindroit_background {
+  /* Ajoutez des styles spécifiques au background de coindroit si nécessaire */
+}
+
+.coindroit_overlay {
+  /* Ajoutez des styles spécifiques à l'overlay de coindroit si nécessaire */
+}
+
+.coingauche_background {
+  /* Ajoutez des styles spécifiques au background de coingauche si nécessaire */
+}
+
+.coingauche_overlay {
+  /* Ajoutez des styles spécifiques à l'overlay de coingauche si nécessaire */
+}
