@@ -3,12 +3,12 @@
   margin: 0;
   vertical-align: top;
   font-family: oswald;
+  box-sizing: border-box;
 }
 
 /* ===============NAVBAR========== */
 
 nav {
-  height: 30px;
   background-color: rgba(0, 0, 0, 0.835);
   color: rgb(255, 255, 255);
   overflow: hidden;
@@ -88,13 +88,13 @@ figcaption p {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  height: 800px; /* Ajustez la hauteur selon vos besoins */
+  height: 1000px;
 }
 
 .coindroit,
 .coingauche {
   position: relative;
-  width: 100%; /* Assurez-vous que les figures occupent toute la largeur du conteneur parent */
+  width: 100%;
 }
 
 .coindroit_background,
@@ -109,10 +109,10 @@ figcaption p {
 .coindroit_overlay,
 .coingauche_overlay {
   position: absolute;
-  top: 20%; /* Ajustez la position verticale selon vos besoins */
-  left: 20%; /* Ajustez la position horizontale selon vos besoins */
-  width: 60%; /* Ajustez la largeur selon vos besoins */
-  height: 60%; /* Ajustez la hauteur selon vos besoins */
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
 
   .coindroit {
     grid-column: 2 / 3;
@@ -139,4 +139,116 @@ figcaption p {
   .coingauche_overlay {
     /* Ajoutez des styles spécifiques à l'overlay de coingauche si nécessaire */
   }
+}
+
+.beertradition,
+.pubstory {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trad_title {
+  font-size: 220%;
+}
+
+.trad_subtitle {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 80%;
+}
+
+.trad_subtext {
+  font-family: raleway;
+  font-size: 80%;
+  line-height: 2em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mon-bouton {
+  display: inline-block;
+  padding: 9px 40px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10%;
+  border-radius: 5px;
+  background-color: #cfa861;
+  color: #ffffff;
+  transition: 0.5s ease;
+}
+
+.mon-bouton:hover,
+.mon-bouton:active {
+  background-color: rgb(234, 195, 122);
+}
+
+/*============================GALLERY====================*/
+
+.gallery {
+  display: flex;
+  width: 200%;
+}
+
+.gallery_img {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(234, 195, 122);
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+
+.container:hover .image {
+  transform: scale(1.1);
+}
+
+.container:hover .plus {
+  transform: rotate(180deg);
+}
+
+.plus {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 200px;
+  transition: 0.5s ease-out;
+  transform: rotate(0deg);
+  text-align: center;
 }
