@@ -123,22 +123,6 @@ figcaption p {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
-
-  .coindroit_background {
-    /* Ajoutez des styles spécifiques au background de coindroit si nécessaire */
-  }
-
-  .coindroit_overlay {
-    /* Ajoutez des styles spécifiques à l'overlay de coindroit si nécessaire */
-  }
-
-  .coingauche_background {
-    /* Ajoutez des styles spécifiques au background de coingauche si nécessaire */
-  }
-
-  .coingauche_overlay {
-    /* Ajoutez des styles spécifiques à l'overlay de coingauche si nécessaire */
-  }
 }
 
 .beertradition,
@@ -191,7 +175,6 @@ figcaption p {
 
 .gallery {
   display: flex;
-  width: 200%;
 }
 
 .gallery_img {
@@ -251,4 +234,50 @@ figcaption p {
   transition: 0.5s ease-out;
   transform: rotate(0deg);
   text-align: center;
+}
+
+/* ====================SERVICES======================= */
+
+.services {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-evenly;
+}
+
+.services_grid {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.services_img {
+  width: 35%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+.services_title {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.services_subtitle {
+  font-family: raleway;
+  display: flex;
+  text-align: center;
+  font-size: 80%;
+  line-height: 1.5em;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.services_img:hover {
+  filter: sepia();
+}
+
+.services_title:hover {
+  color: #cfa861;
 }
