@@ -182,15 +182,18 @@ figcaption p {
 
 .gallery {
   display: flex;
+  width: 100%;
 }
 
 .gallery_img {
   display: flex;
   flex: 1;
+  width: 100%;
   box-sizing: border-box;
 }
 
 .container {
+  width: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
