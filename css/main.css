@@ -55,12 +55,12 @@ a:active {
 
 .landing {
   position: relative;
-  /* display: inline-block; */
 }
 
 .background_landing {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .overlay_landing {
@@ -70,8 +70,11 @@ a:active {
   object-fit: contain;
   transform: translate(-50%, -50%);
   width: 40%;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
   z-index: 1;
+  margin: auto;
 }
 
 figcaption {
@@ -369,4 +372,21 @@ footer {
   justify-content: center;
   padding: 50px;
   background-color: black;
+}
+
+/* ==============================MOBILEVERSION===================================== */
+
+@media (max-width: 768px) {
+  .nav_icon {
+    width: 20px;
+  }
+
+  .background_landing {
+    height: 450px;
+  }
+
+  .beertradition,
+  .pubstory {
+    padding: 10px;
+  }
 }
